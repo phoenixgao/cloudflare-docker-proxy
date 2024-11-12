@@ -16,13 +16,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.thenetcircle.com", custom_domain = true },
-  { pattern = "quay.thenetcircle.com", custom_domain = true },
-  { pattern = "gcr.thenetcircle.com", custom_domain = true },
-  { pattern = "k8s-gcr.thenetcircle.com", custom_domain = true },
-  { pattern = "k8s.thenetcircle.com", custom_domain = true },
-  { pattern = "ghcr.thenetcircle.com", custom_domain = true },
-  { pattern = "cloudsmith.thenetcircle.com", custom_domain = true },
+  { pattern = "docker.thenetcircle.com", zone_name="thenetcircle.com", custom_domain = true },
+  { pattern = "quay.thenetcircle.com", zone_name="thenetcircle.com", custom_domain = true },
+  { pattern = "gcr.thenetcircle.com", zone_name="thenetcircle.com", custom_domain = true },
+  { pattern = "k8s-gcr.thenetcircle.com", zone_name="thenetcircle.com", custom_domain = true },
+  { pattern = "k8s.thenetcircle.com", zone_name="thenetcircle.com", custom_domain = true },
+  { pattern = "ghcr.thenetcircle.com", zone_name="thenetcircle.com", custom_domain = true },
+  { pattern = "cloudsmith.thenetcircle.com", zone_name="thenetcircle.com", custom_domain = true },
 ]
 
 [env.production.vars]
