@@ -31,8 +31,8 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.thenetcircle.com", custom_domain = true }
+route = { pattern = "docker-staging.thenetcircle.com", zone_name="thenetcircle.com", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
-TARGET_UPSTREAM = ""
+TARGET_UPSTREAM = "https://registry-1.docker.io"
